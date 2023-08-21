@@ -55,8 +55,23 @@
       </section>
       <section>
         <h2>Cat Form</h2>
+        <!-- Add required to make sure form is not left blank -->
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <input type="text" name="catphotourl" placeholder="cat photo URL" />
+          <label
+            ><input id="indoor" type="radio" name="indoor-outdoor" />
+            Indoor</label
+          >
+          <label
+            ><input id="outdoor" type="radio" name="indoor-outdoor" />
+            Outdoor</label
+          >
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
